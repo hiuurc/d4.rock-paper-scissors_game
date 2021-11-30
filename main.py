@@ -29,11 +29,11 @@ scissors = '''
 import random
 hand = [rock, paper, scissors]
 
-player_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors."))
-computer_choice = random.randint(1,4)
+player_choice = int(input("What do you choose? Type 1 for Rock, 2 for Paper or 3 for Scissors."))
+computer_choice = random.randint(1,3)
 
 print(hand[player_choice - 1])
-print("Computer choose:\n")
+print("Computer choose:\n", computer_choice)
 print(hand[computer_choice-1])
 
 if player_choice == 1:
